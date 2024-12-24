@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .App {
   text-align: center;
   background-color: #c3b1e6;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding-top: 1%;
+  padding-right: 1%;
 }
 
 .App-header {
@@ -24,9 +22,18 @@
   color: #c3b1e6;
 }
 
+.navbar { 
+  background-color: #edf7fd; 
+  overflow: hidden; 
+  border-radius: 1000px / 1000px;
+  width: 85%;
+  place-self: center;
+  height: fit-content;
+} 
+
 .tab-list {
-  border-bottom: 1px solid#c3b1e6;
-  padding-left: 0;
+  border-bottom: 1px solid#edf7fd;
+  place-self: center;
 }
 
 .tab-list-item {
@@ -34,11 +41,22 @@
   list-style: none;
   margin-bottom: -1px;
   padding: 0.5rem 0.75rem;
-  background-color: #c3b1e6;
+  background-color: #edf7fd;
+  font-family: 'Montserrat';
+  font-size: calc(10px + 2vmin);
+  font-weight: 1000;
+  font-display: bold;
 }
 
 .tab-list-active {
-  background-color: white;
-  border: solid #ccc;
+  background-color: #59a0bc;
+  border: solid #59a0bc;
   border-width: 1px 1px 0 1px;
+  border-radius: 100px / 100px; 
+}
+
+.logo{
+  float: left;
+  height: fit-content;
+  width: fit-content;
 }

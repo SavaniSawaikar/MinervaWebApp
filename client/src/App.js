@@ -3,6 +3,7 @@ import React from 'react';
 import Tabs from "./components/Tabs";
 //import axios from 'axios';
 import './App.css';
+import logo from './images/logo.png'
 
 // //data will be the string we send from our server
 // const apiCall = () => {
@@ -19,19 +20,18 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>Tabs Demo</h1>
+    <div class='App'>
+    <div class='navbar' id='nav-bar'>
+      <div class='logo'><img alt="logo" src={logo} width={175} height={100} /></div>
       <Tabs>
-        <div label="Gator">
-          See ya later, <em>Alligator</em>!
-        </div>
-        <div label="Croc">
-          After 'while, <em>Crocodile</em>!
-        </div>
-        <div label="Sarcosuchus">
-          Nothing to see here, this tab is <em>extinct</em>!
-        </div>
+        <div label="ABOUT"></div>
+        <div label="SCHEDULE"></div>
+        <div label="COMMITTEE"></div>
+        <div label="SPONSORS"></div>
+        <div label="FAQs"></div>
+        <div label="TICKETS"></div>
       </Tabs>
+    </div>
     </div>
   );
 }
