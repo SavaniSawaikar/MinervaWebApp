@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: #c3b1e6;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #c3b1e6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #c3b1e6;
+}
+
+.App-link {
+  color: #c3b1e6;
+}
+
+.tab-list {
+  border-bottom: 1px solid#c3b1e6;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+  background-color: #c3b1e6;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
